@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+:root{
+  --primary:#2563eb;
+  --dark:#111827;
+  --light:#f3f4f6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  display:flex;
+  background:var(--light);
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:var(--dark);
+  color:white;
+  height:100vh;
+  padding:20px;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+}
+
+.sidebar a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  margin:10px 0;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:20px;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Chart */
+.chart{
+  margin-top:30px;
+}
+
+.bar{
+  background:var(--primary);
+  margin:10px 0;
+  height:25px;
+  color:white;
+  text-align:right;
+  padding-right:10px;
+  border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin</h2>
+  <a href="#">Dashboard</a>
+  <a href="#">Users</a>
+  <a href="#">Reports</a>
+  <a href="#">Settings</a>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<!-- Cards -->
+<div class="cards">
+
+<div class="card">
+<h3>Total Users</h3>
+<p>1,200</p>
+</div>
+
+<div class="card">
+<h3>Revenue</h3>
+<p>$5,400</p>
+</div>
+
+<div class="card">
+<h3>Orders</h3>
+<p>320</p>
+</div>
+
+</div>
+
+<!-- Chart -->
+<div class="chart">
+
+<h2>Sales Overview</h2>
+
+<div class="bar" style="width:70%">Jan</div>
+<div class="bar" style="width:50%">Feb</div>
+<div class="bar" style="width:80%">Mar</div>
+<div class="bar" style="width:60%">Apr</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
